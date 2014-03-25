@@ -1,0 +1,29 @@
+  interface IPersona
+        {
+            // Define el "que"
+            string Nombre();
+        }
+
+        class Persona : IPersona
+        {
+            ...
+
+            public virtual string Nombre()
+            {
+                // Define el "como" para la clase base Persona.
+                ...
+            }
+        }
+
+        class Empleado : Persona
+        {
+            ...
+        
+            public override string Nombre()
+            {
+                // Define el "como" para la clase derivada Empleado.
+                ...
+            }
+        }
+
+//ejemplo de herencia
